@@ -1,0 +1,13 @@
+<h2>All Genres</h2>
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Link</th>
+    </tr>
+    <%Genre.all.each do |n|%>
+        <tr>
+            <td><%=n.name%></td>
+            <td><a href="/genres/<%=n.slug%>">view</a></td>
+        </tr>
+    <%end%>
+</table>

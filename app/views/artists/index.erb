@@ -1,0 +1,13 @@
+<h2>All Artists</h2>
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Link</th>
+    </tr>
+    <%Artist.all.each do |n|%>
+        <tr>
+            <td><%=n.name%></td>
+            <td><a href="/artists/<%=n.slug%>">view</a></td>
+        </tr>
+    <%end%>
+</table>

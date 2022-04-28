@@ -1,0 +1,13 @@
+<h2>All Songs</h2>
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Link</th>
+    </tr>
+    <%Song.all.each do |n|%>
+        <tr>
+            <td><%=n.name%></td>
+            <td><a href="/songs/<%=n.slug%>">view</a></td>
+        </tr>
+    <%end%>
+</table>
